@@ -10,5 +10,8 @@
     <color name="red">#cc0000</color>
     <color name="cinzaClaro">#DCDCDC</color>
     <color name="laranjaFire">#fd7d24</color>
+    <color name="roxoPoison">#b97fc9</color>
+    <color name="verdeGrass">#9bcc50</color>
+    <color name="azulWater">#4491c3</color>
     <color name="cinza">#5C5C5C</color>
 </resources>
