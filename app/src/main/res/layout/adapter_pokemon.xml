@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintCard"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:background="@color/cinzaClaro">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/pokeImage"
+                android:layout_width="106dp"
+                android:layout_height="106dp"
+                app:layout_constraintTop_toTopOf="@id/constraintCard"
+                app:layout_constraintStart_toStartOf="@id/constraintCard"
+                app:layout_constraintBottom_toBottomOf="@id/constraintCard"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/charmander"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/nomePokemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/pokeImage"
+                app:layout_constraintStart_toEndOf="@id/pokeImage"
+                android:text="@string/nomePoke"
+                android:textSize="24sp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/numeroPokemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/pokeImage"
+                app:layout_constraintStart_toEndOf="@id/pokeImage"
+                android:text="@string/numeroPoke"
+                android:textSize="20sp"
+                android:textColor="@color/cinza"
+                android:layout_marginStart="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tipoPokemonUm"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/pokeImage"
+                app:layout_constraintBottom_toBottomOf="@id/pokeImage"
+                app:layout_constraintStart_toEndOf="@id/pokeImage"
+                app:layout_constraintEnd_toStartOf="@id/tipoPokemonDois"
+                android:text="@string/tipoPoke"
+                android:gravity="center"
+                android:background="@drawable/background_fire"
+                android:textColor="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tipoPokemonDois"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/pokeImage"
+                app:layout_constraintBottom_toBottomOf="@id/pokeImage"
+                app:layout_constraintStart_toEndOf="@id/tipoPokemonUm"
+                app:layout_constraintEnd_toEndOf="@id/constraintCard"
+                android:text="@string/tipoPokeDois"
+                android:gravity="center"
+                android:background="@drawable/background_fire"
+                android:textColor="@color/white"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

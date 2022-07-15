@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="nomePoke">Charmander</string>
+    <string name="numeroPoke">Nº 004</string>
+    <string name="tipoPoke">Fogo</string>
+    <string name="tipoPokeDois">Fogo</string>
+</resources>
