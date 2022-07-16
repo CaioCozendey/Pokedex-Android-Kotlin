@@ -1,11 +1,12 @@
-package com.example.pokedex
+package com.example.pokedex.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.pokedex.model.Pokemon
-import com.example.pokedex.model.PokemonTipo
+import com.example.pokedex.R
+import com.example.pokedex.domain.Pokemon
+import com.example.pokedex.domain.PokemonTipo
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.pokedex.model
+package com.example.pokedex.domain
 
 data class Pokemon (
     val nome: String,

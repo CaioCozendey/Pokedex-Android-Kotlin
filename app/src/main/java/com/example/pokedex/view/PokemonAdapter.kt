@@ -1,4 +1,4 @@
-package com.example.pokedex
+package com.example.pokedex.view
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.pokedex.model.Pokemon
+import com.example.pokedex.R
+import com.example.pokedex.domain.Pokemon
 
 class PokemonAdapter(
     val pokemon: List<Pokemon>
