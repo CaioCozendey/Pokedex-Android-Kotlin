@@ -1,5 +1,6 @@
 package com.example.pokedex.view
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,7 @@ import com.example.pokedex.R
 import com.example.pokedex.domain.Pokemon
 
 class PokemonAdapter(
-    val pokemon: List<Pokemon>
+    private val pokemon: List<Pokemon>
 ) : RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -28,6 +29,7 @@ class PokemonAdapter(
     override fun getItemCount() = pokemon.size
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        @SuppressLint("SetTextI18n")
         fun bindView(item: Pokemon) = with(itemView){
             val imagem = findViewById<ImageView>(R.id.pokeImage)
             val nome = findViewById<TextView>(R.id.nomePokemon)
@@ -37,11 +39,11 @@ class PokemonAdapter(
 
             numero.text = "Nº ${item.formattedNumber}"
             nome.text = item.nome
-            tipoUm.text = item.tipo[0].nome
+            tipoUm.text = item.tipo[0].tipo
 
             if ( item.tipo.size > 1 ){
                 tipoDois.visibility = View.VISIBLE
-                tipoDois.text = item.tipo[1].nome
+                tipoDois.text = item.tipo[1].tipo
             } else {
                 tipoDois.visibility = View.GONE
             }

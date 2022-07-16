@@ -1,7 +1,7 @@
 package com.example.pokedex.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pokedex.R
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerViewPokemon = findViewById<RecyclerView>(R.id.recyclerViewPokes)
 
-        val charmander = Pokemon(
+        val charmander = Pokemon(1,
             "Charmander",
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
             4,
