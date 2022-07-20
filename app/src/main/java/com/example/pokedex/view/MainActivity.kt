@@ -2,33 +2,37 @@ package com.example.pokedex.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pokedex.R
+import com.example.pokedex.ViewModel.PokemonViewModel
+import com.example.pokedex.ViewModel.PokemonViewModelFactory
 import com.example.pokedex.domain.Pokemon
-import com.example.pokedex.domain.PokemonTipo
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var recyclerView: RecyclerView
+
+    private val viewModel by lazy {
+        ViewModelProvider(this, PokemonViewModelFactory())
+            .get(PokemonViewModel::class.java)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val recyclerViewPokemon = findViewById<RecyclerView>(R.id.recyclerViewPokes)
+        viewModel.pokemons.observe(this, Observer {
+            loadRecyclerView(it)
+        })
 
-        val charmander = Pokemon(1,
-            "Charmander",
-            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
-            4,
-            listOf(
-                PokemonTipo("Fogo"),
-                PokemonTipo("Água")
-            )
-        )
-        val listaPokemon = listOf( charmander, charmander, charmander,  charmander, charmander, charmander)
+        recyclerView = findViewById<RecyclerView>(R.id.recyclerViewPokes)
+    }
 
-        val layoutManager = LinearLayoutManager(this)
-
-        recyclerViewPokemon.layoutManager = layoutManager
-        recyclerViewPokemon.adapter = PokemonAdapter(listaPokemon)
+    private fun loadRecyclerView(pokemons: List<Pokemon?>) {
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = PokemonAdapter(pokemons)
     }
 }
