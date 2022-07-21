@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.pokedex.R
 import com.example.pokedex.domain.Pokemon
-import java.util.*
 
 class PokemonAdapter(
     private val pokemon: List<Pokemon?>
@@ -36,26 +35,25 @@ class PokemonAdapter(
             val imagem = findViewById<ImageView>(R.id.pokeImage)
             val nome = findViewById<TextView>(R.id.nomePokemon)
             val numero = findViewById<TextView>(R.id.numeroPokemon)
-            val tipoUm = findViewById<TextView>(R.id.tipoPokemonUm)
-            val tipoDois = findViewById<TextView>(R.id.tipoPokemonDois)
+            val tipoum = findViewById<TextView>(R.id.tipoPokemonUm)
+            val tipodois = findViewById<TextView>(R.id.tipoPokemonDois)
 
             item?.let {
                 Glide.with(itemView.context).load(it.imageUrl).into(imagem)
 
                 numero.text = "Nº ${item.formattedNumber}"
                 nome.text = item.formattedName
-                tipoUm.text =
-                    item.tipo[0].tipo.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
+                tipoum.text = item.tipo[0].nomeTipo
 
                 if (item.tipo.size > 1) {
-                    tipoDois.visibility = View.VISIBLE
-                    tipoDois.text = item.tipo[1].tipo.replaceFirstChar {
-                        if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString()
-                    }
+                    tipodois.visibility = View.VISIBLE
+                    tipodois.text = item.tipo[1].nomeTipo
                 } else {
-                    tipoDois.visibility = View.GONE
+                    tipodois.visibility = View.GONE
                 }
             }
         }
+
+
     }
 }

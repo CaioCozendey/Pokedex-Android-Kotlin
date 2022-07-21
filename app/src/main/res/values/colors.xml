@@ -9,9 +9,29 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#cc0000</color>
     <color name="cinzaClaro">#DCDCDC</color>
+    <color name="cinza">#5C5C5C</color>
+    
+    <!-- Tipos Pokemons Cor -->
     <color name="laranjaFire">#fd7d24</color>
     <color name="roxoPoison">#b97fc9</color>
     <color name="verdeGrass">#9bcc50</color>
     <color name="azulWater">#4491c3</color>
-    <color name="cinza">#5C5C5C</color>
+    <color name="verdeBug">#9bcc50</color>
+    <color name="rosaPsychic">#f366b9</color>
+    <color name="cinzaNormal">#a4acaf</color>
+    <color name="azulFlying">#3dc7ef</color>
+    <color name="cinzaFlying">#bdb9b8</color>
+    <color name="amareloEletric">#eed535</color>
+    <color name="laranjaFighting">#d56723</color>
+    <color name="marromRock">#a38c21</color>
+    <color name="azulIce">#51c4e7</color>
+    <color name="roxoGhost">#7b62a3</color>
+    <color name="rosaFairy">#fdb9e9</color>
+    <color name="azulDragon">#53a4cf</color>
+    <color name="vermelhoDragon">#f16e57</color>
+    <color name="cinzaDark">#707070</color>
+    <color name="cinzaSteel">#9eb7b8</color>
+    <color name="amareloGround">#f7de3f</color>
+    <color name="marromGround">#ab9842</color>
+
 </resources>

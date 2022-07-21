@@ -6,10 +6,26 @@
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/layout/adapter_pokemon.xml" value="0.22" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/background_fire.xml" value="0.2845" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/background_water.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_bug.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_dark.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_dragon.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_eletricc.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_fairy.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_fighting.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_fly.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_ghost.xml" value="0.1335" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_grass.xml" value="0.2845" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_ground.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_ice.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_normal.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_poison.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_psychic.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_rock.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/brackground_steel.xml" value="0.1335" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/fundo_branco_pokeball.xml" value="0.2845" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/layout/adapter_pokemon.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/layout/adapter_pokemon.xml" value="0.25" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1335" />
       </map>
     </option>
   </component>
