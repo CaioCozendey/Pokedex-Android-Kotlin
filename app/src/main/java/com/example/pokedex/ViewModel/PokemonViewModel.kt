@@ -2,7 +2,7 @@ package com.example.pokedex.ViewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.pokedex.api.model.PokemonRepository
+import com.example.pokedex.api.PokemonRepository
 import com.example.pokedex.domain.Pokemon
 
 class PokemonViewModel : ViewModel() {

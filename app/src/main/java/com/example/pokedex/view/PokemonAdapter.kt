@@ -1,6 +1,7 @@
 package com.example.pokedex.view
 
 import android.annotation.SuppressLint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +13,7 @@ import com.example.pokedex.R
 import com.example.pokedex.domain.Pokemon
 
 class PokemonAdapter(
-    private val pokemon: List<Pokemon?>
+    private val items: List<Pokemon?>
 ) : RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -21,39 +22,38 @@ class PokemonAdapter(
         return ViewHolder(view)
     }
 
+    override fun getItemCount() = items.size
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = pokemon[position]
+        val item = items[position]
 
         holder.bindView(item)
     }
 
-    override fun getItemCount() = pokemon.size
-
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         @SuppressLint("SetTextI18n")
-        fun bindView(item: Pokemon?) = with(itemView){
+        fun bindView(item: Pokemon?) = with(itemView) {
             val imagem = findViewById<ImageView>(R.id.pokeImage)
-            val nome = findViewById<TextView>(R.id.nomePokemon)
             val numero = findViewById<TextView>(R.id.numeroPokemon)
-            val tipoum = findViewById<TextView>(R.id.tipoPokemonUm)
-            val tipodois = findViewById<TextView>(R.id.tipoPokemonDois)
+            val nome = findViewById<TextView>(R.id.nomePokemon)
+            val tipoUm = findViewById<TextView>(R.id.typeUm)
+            val tipoDois = findViewById<TextView>(R.id.typeDois)
 
             item?.let {
                 Glide.with(itemView.context).load(it.imageUrl).into(imagem)
 
                 numero.text = "Nº ${item.formattedNumber}"
                 nome.text = item.formattedName
-                tipoum.text = item.tipo[0].nomeTipo
+                tipoUm.text = item.types[0].formattedName
+                Log.e("POKEMON_API", "$tipoUm")
 
-                if (item.tipo.size > 1) {
-                    tipodois.visibility = View.VISIBLE
-                    tipodois.text = item.tipo[1].nomeTipo
+                if (item.types.size > 1) {
+                    tipoDois.visibility = View.VISIBLE
+                    tipoDois.text = item.types[1].formattedName
                 } else {
-                    tipodois.visibility = View.GONE
+                    tipoDois.visibility = View.GONE
                 }
             }
         }
-
-
     }
 }

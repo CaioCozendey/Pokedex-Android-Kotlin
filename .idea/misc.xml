@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/layout/adapter_pokemon.xml" value="0.22" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/background_fire.xml" value="0.2845" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/background_water.xml" value="0.1335" />

@@ -1,6 +1,6 @@
 package com.example.pokedex.api.model
 
-import com.example.pokedex.domain.PokemonTipo
+import com.example.pokedex.domain.PokemonType
 
 data class PokemonsApiResult(
     val count: Int,
@@ -22,6 +22,5 @@ data class PokemonApiResult(
 
 data class PokemonTypeSlot(
     val slot: Int,
-    val type: PokemonTipo
+    val type: PokemonType
 )
-

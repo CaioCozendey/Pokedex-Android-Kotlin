@@ -1,5 +1,7 @@
-package com.example.pokedex.api.model
+package com.example.pokedex.api
 
+import com.example.pokedex.api.model.PokemonApiResult
+import com.example.pokedex.api.model.PokemonsApiResult
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -27,4 +29,3 @@ object PokemonRepository {
         return call.execute().body()
     }
 }
-

@@ -52,25 +52,25 @@
                 android:textColor="@color/cinza"/>
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tipoPokemonUm"
+                android:id="@+id/typeUm"
                 android:layout_width="88dp"
                 android:layout_height="24dp"
                 app:layout_constraintTop_toTopOf="@id/pokeImage"
                 app:layout_constraintBottom_toBottomOf="@id/pokeImage"
                 app:layout_constraintStart_toEndOf="@id/pokeImage"
-                app:layout_constraintEnd_toStartOf="@id/tipoPokemonDois"
+                app:layout_constraintEnd_toStartOf="@id/typeDois"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:background="@drawable/brackground_fly"
                 android:textColor="@color/black"/>
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tipoPokemonDois"
+                android:id="@+id/typeDois"
                 android:layout_width="88dp"
                 android:layout_height="24dp"
-                app:layout_constraintTop_toTopOf="@id/tipoPokemonUm"
-                app:layout_constraintBottom_toBottomOf="@id/tipoPokemonUm"
-                app:layout_constraintStart_toEndOf="@id/tipoPokemonUm"
+                app:layout_constraintTop_toTopOf="@id/typeUm"
+                app:layout_constraintBottom_toBottomOf="@id/typeUm"
+                app:layout_constraintStart_toEndOf="@id/typeUm"
                 app:layout_constraintEnd_toEndOf="@id/constraintCard"
                 android:gravity="center"
                 android:background="@drawable/brackground_grass"

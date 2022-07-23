@@ -7,13 +7,15 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pokedex.R
+import com.example.pokedex.domain.Pokemon
 import com.example.pokedex.ViewModel.PokemonViewModel
 import com.example.pokedex.ViewModel.PokemonViewModelFactory
-import com.example.pokedex.domain.Pokemon
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var recyclerView: RecyclerView
+    private val recyclerView by lazy {
+        findViewById<RecyclerView>(R.id.recyclerViewPokes)
+    }
 
     private val viewModel by lazy {
         ViewModelProvider(this, PokemonViewModelFactory())
@@ -27,8 +29,6 @@ class MainActivity : AppCompatActivity() {
         viewModel.pokemons.observe(this, Observer {
             loadRecyclerView(it)
         })
-
-        recyclerView = findViewById<RecyclerView>(R.id.recyclerViewPokes)
     }
 
     private fun loadRecyclerView(pokemons: List<Pokemon?>) {
