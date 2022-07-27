@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/drawable/background_water.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/drawable/brackground_dragon.xml" value="0.2845" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/drawable/brackground_fly.xml" value="0.2845" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/drawable/brackground_grass.xml" value="0.1335" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/drawable/brackground_grass_e_bug.xml" value="0.1335" />
+        <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/drawable/brackground_ground.xml" value="0.2845" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/layout/activity_main.xml" value="0.30567081604426005" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex-Android-Kotlin/app/src/main/res/layout/adapter_pokemon.xml" value="0.22" />
         <entry key="..\:/Users/caioc/AndroidStudioProjects/Pokedex/app/src/main/res/drawable/background_fire.xml" value="0.2845" />
