@@ -1,7 +1,6 @@
 package com.example.pokedex.view
 
 import android.annotation.SuppressLint
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -44,15 +43,73 @@ class PokemonAdapter(
 
                 numero.text = "Nº ${item.formattedNumber}"
                 nome.text = item.formattedName
-                tipoUm.text = item.types[0].formattedName
-                Log.e("POKEMON_API", "$tipoUm")
+                tipoUm.text = item.types[0].name.capitalize()
+                mudaCorFundoType(item.types[0].name, tipoUm)
 
                 if (item.types.size > 1) {
                     tipoDois.visibility = View.VISIBLE
-                    tipoDois.text = item.types[1].formattedName
+                    tipoDois.text = item.types[1].name.capitalize()
+
+                    mudaCorFundoType(item.types[0].name, tipoUm)
+                    mudaCorFundoType(item.types[1].name, tipoDois)
                 } else {
                     tipoDois.visibility = View.GONE
                 }
+            }
+        }
+
+        @SuppressLint("ResourceAsColor")
+        private fun mudaCorFundoType(tipo: String, background: TextView) {
+            if (tipo == "fire") {
+                background.setBackgroundResource(R.drawable.background_fire)
+            }
+            else if( tipo == "water" ){
+                background.setBackgroundResource(R.drawable.background_water)
+            }
+            else if( tipo == "bug" ||  tipo == "grass" ){
+                background.setBackgroundResource(R.drawable.brackground_grass_e_bug)
+            }
+            else if( tipo == "poison" ){
+                background.setBackgroundResource(R.drawable.brackground_poison)
+            }
+            else if( tipo == "dark" ){
+                background.setBackgroundResource(R.drawable.brackground_dark)
+            }
+            else if( tipo == "electric" ){
+                background.setBackgroundResource(R.drawable.brackground_eletricc)
+            }
+            else if( tipo == "fairy" ){
+                background.setBackgroundResource(R.drawable.brackground_fairy)
+            }
+            else if( tipo == "fighting" ){
+                background.setBackgroundResource(R.drawable.brackground_fighting)
+            }
+            else if( tipo == "flying" ){
+                background.setBackgroundResource(R.drawable.brackground_fly)
+            }
+            else if( tipo == "ghost" ){
+                background.setBackgroundResource(R.drawable.brackground_ghost)
+            }
+            else if( tipo == "normal" ){
+                background.setBackgroundResource(R.drawable.brackground_normal)
+            }
+            else if( tipo == "ground" ){
+                background.setBackgroundResource(R.drawable.brackground_ground)
+            }
+            else if ( tipo == "psychic"){
+                background.setBackgroundResource(R.drawable.brackground_psychic)
+            }
+            else if ( tipo == "ice"){
+                background.setBackgroundResource(R.drawable.brackground_ice)
+            }
+            else if ( tipo == "rock"){
+                background.setBackgroundResource(R.drawable.brackground_rock)
+            }
+            else if ( tipo == "steel"){
+                background.setBackgroundResource(R.drawable.brackground_steel)
+            }
+            else if ( tipo == "dragon"){
+                background.setBackgroundResource(R.drawable.brackground_dragon)
             }
         }
     }

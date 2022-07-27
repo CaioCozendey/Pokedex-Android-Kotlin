@@ -14,9 +14,8 @@
     <!-- Tipos Pokemons Cor -->
     <color name="laranjaFire">#fd7d24</color>
     <color name="roxoPoison">#b97fc9</color>
-    <color name="verdeGrass">#9bcc50</color>
+    <color name="verdeGrass_Bug">#9bcc50</color>
     <color name="azulWater">#4491c3</color>
-    <color name="verdeBug">#9bcc50</color>
     <color name="rosaPsychic">#f366b9</color>
     <color name="cinzaNormal">#a4acaf</color>
     <color name="azulFlying">#3dc7ef</color>

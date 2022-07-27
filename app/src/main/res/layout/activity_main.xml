@@ -26,14 +26,14 @@
         android:src="@drawable/pokeball"
         android:background="@drawable/fundo_branco_pokeball"/>
 
-    <!-- IMPLEMENTAR DEPOIS <androidx.appcompat.widget.SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/searchViewPokedex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/toolbar"
         app:layout_constraintBottom_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toEndOf="@id/pokeballLogo"
-        android:layout_marginStart="8dp"/> -->
+        android:layout_marginStart="8dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewPokes"

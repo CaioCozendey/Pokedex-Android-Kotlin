@@ -10,7 +10,8 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >@color/black</item>listaPokemon
+        <item name="android:statusBarColor" >@color/black</item>
         <!-- Customize your theme here. -->
+        <item name="android:textColorHint">@color/white</item>
     </style>
 </resources>

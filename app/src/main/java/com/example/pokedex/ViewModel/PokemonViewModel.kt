@@ -29,8 +29,8 @@ class PokemonViewModel : ViewModel() {
                     Pokemon(
                         pokemonApiResult.id,
                         pokemonApiResult.name,
-                        pokemonApiResult.types.map { type ->
-                            type.type
+                        pokemonApiResult.types.map { pokemonTypeSlot ->
+                            pokemonTypeSlot.type
                         }
                     )
                 }

@@ -61,8 +61,8 @@
                 app:layout_constraintEnd_toStartOf="@id/typeDois"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
-                android:background="@drawable/brackground_fly"
-                android:textColor="@color/black"/>
+                android:background="@color/black"
+                android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/typeDois"
@@ -73,7 +73,7 @@
                 app:layout_constraintStart_toEndOf="@id/typeUm"
                 app:layout_constraintEnd_toEndOf="@id/constraintCard"
                 android:gravity="center"
-                android:background="@drawable/brackground_grass"
+                android:background="@color/black"
                 android:textColor="@color/white"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
