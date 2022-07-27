@@ -11,7 +11,8 @@ import com.example.pokedex.domain.Pokemon
 import com.example.pokedex.ViewModel.PokemonViewModel
 import com.example.pokedex.ViewModel.PokemonViewModelFactory
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : AppCompatActivity(){
 
     private val recyclerView by lazy {
         findViewById<RecyclerView>(R.id.recyclerViewPokes)
