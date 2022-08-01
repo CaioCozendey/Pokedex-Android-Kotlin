@@ -11,7 +11,8 @@ import com.example.pokedex.ViewModel.PokemonViewModel
 import com.example.pokedex.ViewModel.PokemonViewModelFactory
 import com.example.pokedex.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityMainBinding
 
