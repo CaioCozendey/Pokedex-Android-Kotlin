@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokemonDetailsActivity">
+
+    <View
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="@drawable/pokemon_details_background_red"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/red"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPokemonImageDetails"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        app:cardCornerRadius="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pokemonImageDetails"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/charmander"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pokemonNameDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardPokemonImageDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="@string/nomePoke"
+        android:textSize="24sp"
+        android:textColor="@color/cinza"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/pokemonNameDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:id="@+id/layoutTypeDetails">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/typeUmDetails"
+            android:layout_width="128dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:background="@drawable/background_fire"
+            android:textColor="@color/white"
+            android:text="@string/fire"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/typeDoisDetails"
+            android:layout_width="128dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:layout_marginStart="48dp"
+            android:background="@drawable/background_fire"
+            android:textColor="@color/white"
+            android:text="@string/fire"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tamanhoDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutTypeDetails"
+        app:layout_constraintEnd_toStartOf="@id/pesoDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/height"
+        android:textSize="18sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pesoDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tamanhoDetails"
+        app:layout_constraintStart_toEndOf="@id/tamanhoDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:text="@string/weight"
+        android:textSize="18sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tamanhoValorDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tamanhoDetails"
+        app:layout_constraintStart_toStartOf="@id/tamanhoDetails"
+        app:layout_constraintEnd_toEndOf="@id/tamanhoDetails"
+        android:text="@string/_0_9_m"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pesoValorDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pesoDetails"
+        app:layout_constraintStart_toStartOf="@id/pesoDetails"
+        app:layout_constraintEnd_toEndOf="@id/pesoDetails"
+        android:text="@string/_22_0_kg"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/evolucoesDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tamanhoDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="@string/evolutions"
+        android:textSize="20sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEvolutionOne"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/evolucoesDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pokeImageCardEvolutionOne"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/charmander"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pokeNameEvotutionOneDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardEvolutionOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:text="@string/nomePoke"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEvolutionTwo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/pokeNameEvotutionOneDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pokeImageCardEvolutionTwo"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/charmander"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pokeNameEvotutionTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardEvolutionTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:text="@string/nomePoke"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEvolutionThree"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/pokeNameEvotutionTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pokeImageCardEvolutionThree"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/charmander"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pokeNameEvotutionThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardEvolutionThree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:text="@string/nomePoke"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,4 +5,10 @@
     <string name="tipoPoke">Fogo</string>
     <string name="tipoPokeDois">Fogo</string>
     <string name="tipo2">Grama</string>
+    <string name="fire">Fire</string>
+    <string name="evolutions">Evolutions</string>
+    <string name="_22_0_kg">22.0 kg</string>
+    <string name="_0_9_m">0.9 m</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
 </resources>
