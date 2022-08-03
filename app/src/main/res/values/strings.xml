@@ -11,4 +11,5 @@
     <string name="_0_9_m">0.9 m</string>
     <string name="weight">Weight</string>
     <string name="height">Height</string>
+    <string name="search" />
 </resources>

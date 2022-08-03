@@ -1,7 +1,6 @@
 package com.example.pokedex.view
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -41,7 +40,6 @@ class PokemonAdapter(
 
             item?.let {
                 Glide.with(itemView.context).load(it.imageUrl).into(imagem)
-
                 numero.text = "Nº ${item.formattedNumber}"
                 nome.text = item.formattedName
                 tipoUm.text = item.types[0].name.capitalize()
@@ -50,8 +48,6 @@ class PokemonAdapter(
                 if (item.types.size > 1) {
                     tipoDois.visibility = View.VISIBLE
                     tipoDois.text = item.types[1].name.capitalize()
-
-                    mudaCorFundoType(item.types[0].name, tipoUm)
                     mudaCorFundoType(item.types[1].name, tipoDois)
                 } else {
                     tipoDois.visibility = View.GONE

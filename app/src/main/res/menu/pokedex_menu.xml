@@ -13,5 +13,4 @@
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         tools:targetApi="o"/>
 
-
 </menu>
