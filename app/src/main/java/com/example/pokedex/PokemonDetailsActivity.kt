@@ -24,8 +24,5 @@ class PokemonDetailsActivity : AppCompatActivity() {
         else{
             type2.visibility = View.GONE
         }
-
-
-
     }
 }
